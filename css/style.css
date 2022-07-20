@@ -1,0 +1,214 @@
+/*importing  external fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Odibee+Sans&family=PT+Sans+Narrow&family=Ubuntu:wght@500&display=swap');
+
+/*Initializing all margings padding box sizing and text decoration of all documnets*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Setting a backgorund image*/
+body{
+    background-image: url("../images/bg1.jpg");
+    background-color:#cccccc;  
+}
+/*Setting the style of h1*/
+h1{  
+    font-family: 'PT Sans Narrow', sans-serif; 
+    font-size:40px;
+    font-weight:100;
+    background-color: #555555; 
+    text-align: center;   
+}
+
+/*Setting the style of h2*/
+h2{
+    font-family:'Indie Flower', cursive;
+    font-size: 320x;
+    margin-bottom:5px;
+    padding:5px;
+}
+
+/*Setting the style of h6*/
+h6{
+    font-size: medium; 
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+/*Setting the style of p*/
+p{
+    font-family: 'PT Sans Narrow', sans-serif; 
+    font-size: 25px ;
+    font-weight: 600;
+    color: black;/*Setting the font color*/
+    text-align: justify;
+}
+
+/*Setting the style of li*/
+li{
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*providing hover effects to anchor tag and button*/
+a:hover{background-color:red; color:black;}
+button:hover{background-color: aqua; color:black;}
+ 
+/*Setting padding on section*/
+section{
+    padding: 100px 25px;
+}
+
+/*Setting the style of navigation bar*/
+.navigationBar{
+    z-index: 999; /*Setting stcak index of navigation bar to max as it needs to be on the front*/
+    padding: 5px 0;
+    background-color:#5D5C61;
+    position: fixed;
+    width: 100%   
+}
+
+/*Setting the style of maxWidth*/
+.maxWidth{
+    max-width:1000;
+    padding: 0 60px;
+    margin: auto;
+}
+
+/* Setting maxWidth to navigation bar*/
+.navigationBar .maxWidth{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Setting the style of home anchor tag inside navigation bar*/
+.navigationBar .home a{
+    font-family: 'Odibee Sans', cursive;
+    color: #7FDFFF;/*Setting the font color*/
+    font-size: 40px;
+    font-weight:550;
+    
+}
+
+/*Setting the style of nav anchor tags inside navigation bar*/
+.navigationBar .nav a{
+    font-family: 'Odibee Sans', cursive;
+    display:block;
+    color: #7FDFFF;/*Setting the font color*/
+    font-size:30px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color;
+
+}
+
+/*Setting the style of li inidse navigation bar*/
+.navigationBar .nav li{
+    list-style: none;
+    display:inline-block;
+}
+
+/*Setting the style of heading class*/
+.heading{
+    display: flex;
+    color: black;
+    font-family:'Indie Flower', cursive;
+    font-size: 100px;
+    font-weight: 700;
+  
+}
+
+/*Setting the style of button*/
+.button {
+    background-color: #555555; 
+    border: none;
+    color: white;/*Setting the font color*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+/*Setting the style of row class*/
+.row{
+    display:flex;
+    padding: 0px 50px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 0px;
+   
+}/*Setting the style of rightColumn class*/
+.rightColumn{
+    padding:20px;   
+}
+/*Setting the style of leftColumm ckass*/
+.leftColumn{
+    padding:20px;
+}
+
+/*Setting the style of submit*/
+input[type=submit] {
+    background-color:#7FDFFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+  }
+
+/*Setting the text inside to change color while typing the form*/
+input[type=text]:focus {
+    background-color: #7FDFFF;
+  }
+ /*Setting the style of text insdie the form */
+input[type=text] {
+    font-family:'PT Sans Narrow', sans-serif;;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 20px;
+    font-weight: 200;
+    color:black;
+    width:100%;
+  }
+
+/*Setting the style of the text area inside the form*/
+textarea {
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 20px;
+    font-weight: 200;
+    color:black;
+    width: 100%;
+}
+
+/*Setting the text inside to change color while typing the form */
+textarea:focus{
+    background-color: #7FDFFF;
+}
+
+/*Setting the style of darkMode class*/
+.darkMode {
+    background-image:none;/*removes the inital backgorund image*/
+    background-color:#696969 ; /* sets the backgound to a darker shade*/
+}
+
+ /*Setting the style of footer */
+ footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color:#5D5C61;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+  

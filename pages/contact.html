@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Providing the same meta values for this document-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title><!--Providing title of the web page-->
+
+    <link rel="stylesheet"  href="../css/style.css"><!-- linking CSS file to this page -->
+    <script src="../js/main.js"></script><!-- linking javascript file to this page -->
+
+    <!-- Start of internal CSS for this document-->
+    <style>
+        
+        .rightColumn{
+            background-color: #5D5C61;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            flex:35%;/*Providing  it's required width*/
+        }
+        
+        .leftColumn{
+            padding:20px;  
+            text-align: center;
+            Font-size:25px;
+            flex:40% ;/*Providing  it's required width*/
+        }
+
+        /*Setting image resolution for social media apps*/
+        .linkLogos{
+            width:66px;
+            height:50px;
+            border: 40px;
+            padding: 10px;   
+        }
+       
+        .portImg{
+            flex: 15%; /*Providing  it's required width*/
+            margin-top: 20px;
+            padding:0px 20px;
+        }
+         
+        .formImage{
+            flex:10%;/*Providing  it's required width*/
+        }
+    </style>
+
+    <!--Start of internal script which provides phone number-->
+    <script type="text/javascript">
+        /*Start of function phoneClick*/
+        function phoneClick() {
+            {document.getElementById("phoneID").innerHTML = "+9779818574188";} /* Displays phone number*/
+        }
+    </script>
+
+</head>
+<body>
+    <!--Providing the same navigation bar to this page-->
+    <nav class="navigationBar">
+        <div class="maxWidth">
+            <div class="home"><a href="../home.html">Home</a></div>
+            <div class = "nav">
+                <li><a href="cv.html" >CV</a></li>
+                <li><a href="blog.html" >Blog</a></li>
+                <li><a href="research.html" >Research</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!--Section start-->
+    <section>
+        <div class="heading">
+            Contact me 
+        </div>
+
+            <!--Creating container and placing content accordingly-->
+            <div class="row">
+                <div class="leftColumn">
+                    
+                    <p style="background-color: #555555;
+                             font-weight: 400; 
+                            text-align: left; color: white; 
+                            padding:30px;"><!--using inline CSS to style p-->
+                        If you liked my portflio website,
+                        <br><!--line break-->
+                        you can contact me on the following platfroms
+                    </p>
+                        <!--inserting an image and specifying it's class for CSS-->
+                        <img  src="../images/phone.png" onclick="phoneClick()" class="linkLogos">
+                            <!--Creating a container and providing ID for JS-->
+                            <div id="phoneID" style="background-color: #d3d3d3"><!--inline CSS to style -->
+                            </div>
+                        <div>
+                            <!--inserting an image with a link and specifying it's class for CSS-->
+                            <a href="mailto:reilseig@gmail.com"  target="_blank">
+                                <img src="../images/gmail.png"  class="linkLogos">
+                            </a>
+                        </div>        
+
+                        <div>
+                            <!--inserting an image with a link and specifying it's class for CSS-->
+                            <a href="https://www.facebook.com/samyak.awale/" target="_blank">
+                                <img src="../images/fb.png"  class="linkLogos">
+                            </a>
+                        </div>
+
+                        <div>
+                            <!--inserting an image with a link and specifying it's class for CSS-->
+                            <a href="https://www.instagram.com/tesserag/" target="_blank">
+                                <img src="../images/insta.png"  class="linkLogos">
+                            </a>
+                        </div>
+                    
+                </div>
+                 <!--inserting an image and specifying it's class for CSS-->
+                <div class="portImg">
+                    <img src="../images/portrait.JPG" style="width:200px;height:400px;" ><!--Inline CSS to style image-->
+                </div> 
+
+                <div class="rightColumn">
+                    <!--Inseting heading for the form-->
+                    <h2 style=" text-align: center; background-color: aqua;"><!--Inline CSS to style h2-->
+                        Drop a note!
+                    </h2>
+
+                    <!--Inserting contents inside form-->
+                    <form name="message" onsubmit="validateForm()">
+                        <p>Full Name:
+                            <br><!--Line break-->
+                            <!--Input texts-->
+                            <input type="text" name="fullName" placeholder="John Doe"><!--Provides a default value as an example-->
+                        </p>
+                        <p>Email: 
+                            <br><!--Line break-->
+                             <!--Input texts-->
+                            <input type="text" name="Email" placeholder="example@gmail.com"><!--Provides a default value as an example-->
+                        </p>
+                        <p>Note:
+                            <br><!--Line break-->
+                            <!--Input texts-->
+                            <textarea name="Note" rows ="10" cols="20" placeholder="Drop a note:"></textarea><!--Provides a default value as an example-->
+                        </p>
+                        <p><input type="submit" value="Send"></p>
+                </div>
+
+                <!--Inseting an image-->
+                <div class="formImage">
+                    <img src="../images/note.gif" style=" height:200px; width:200px; margin-top:320px;" ><!--Using inline CSS-->
+                </div>
+                
+        </div>
+    </section>
+    <!--Providing same footer to this page-->
+    <footer>
+        <h6>
+            &#169 2021,
+            <a href="mailto:reilseig@gmail.com" style="color: black;">
+                Samyak Awale.
+            </a>
+            All rights reserved.
+            <button class="button" type="button" onclick="darkMode()" style="float: right;">
+                dark mode
+            </button>
+        </h6>  
+    </footer>
+</body>
+
+</html>

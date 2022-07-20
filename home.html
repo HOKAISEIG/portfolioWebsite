@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8"> <!--Specifies the character encoding for this document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Provides an HTTP header for the information-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Specifies viewport settings.-->
+
+    <title>Home</title><!--Providing title of the web page-->
+
+    <link rel="stylesheet"  href="css/style.css"> <!-- linking CSS file to this page -->
+    <script src="js/main.js"></script> <!-- linking javascript file to this page-->
+
+    <!-- Start of internal CSS for this document-->
+    <style>
+
+        /*Changing the style of body as desired */
+       .body{
+            color: black; 
+            font-family:'Indie Flower', cursive;
+            font-size: 100px;
+            font-weight: 700;
+        } 
+
+        /*Changing the style of class traits */
+        .content{
+            font-family:'Indie Flower', cursive; 
+            font-size: 30px;
+            background-color:#555555;
+            color: white;
+            padding:30px;
+            margin-left: 20px; 
+        }
+
+        .leftColumn{
+            flex:50%;/*Providing  it's required width*/
+        }
+
+        .rightcColumn{
+            flex:50%; /*Providing  it's required width*/
+        }
+    </style>
+</head>
+
+<body> 
+    <!--Creation of navigation bar-->
+    <nav class="navigationBar">
+        
+        <div class="maxWidth"><!--Specifies the width of the navigation bar-->
+
+            <!--Displays name of the pages in the navigation bar and also link to it's repected page-->
+            <div class="home">
+                <a href="home.html">
+                Home
+                </a>
+            </div> 
+
+            <div class = "nav">
+                <!--Displaying other content on the naviagtion bar as a list-->
+                <li><a href="pages/cv.html" >CV</a></li>
+                <li><a href="pages/blog.html" >Blog</a></li>
+                <li><a href="pages/research.html" >Research</a></li>
+                <li><a href="pages/contact.html" >Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Section start-->
+    <section>
+        <!--Creating container and placing content accordinly-->
+        <div class="row">
+
+            <div class="leftColumn"> <!--Left side column with 50% width-->
+                <!--Use of customom heading style-->
+                <div class="heading" style="margin-left: 100px; font-size: 100px;" ><!--inline CSS to style heading -->
+                    Samyak
+                     <br> <!--Line break-->
+                    Awale
+                </div>   
+
+                <!--Creating a button to use it as interaction-->
+                <button class="button" type="button" onclick="changeContent()" style="padding:20px; margin-top: 50px;"><!--inline CSS to style button-->
+                    Click to know more about this website! <!--onlick calls the changeContent function present in the js-->
+                </button>
+            </div>
+            
+            <div class="rightColumn"><!--right side column with 50% width-->
+                <!--Inserting  and specifying its resolution-->
+                <img src="images/portrait2.png" style="width:400px;height:476px;" > <!--inline CSS to style image-->
+            </div>
+        </div>
+
+        <!--Creating another containers and placing content accordinly-->
+        <div class="row">
+
+            <div class="content" id="content"><!--Providing ID to work wtih javascript-->
+                Welcome to my portfolio website!
+            </div>
+        </div>
+    </section>
+
+    <!--Creating footer tag-->
+    <footer>
+        <h6>
+            &#169 <!--Copyright Symbol-->2021,
+            <a href="mailto:reilseig@gmail.com" style="color: black;"><!--inline CSS to style anchor tag-->
+                Samyak Awale.
+            </a><!--links  my mail-->
+            All rights reserved.
+
+            <!--Button for toggling dark mode-->
+            <button class="button" type="button" onclick="darkMode()" style="float: right;"> <!--onclick calls the function darkMode presesnt in js-->
+                dark mode
+            </button>
+        </h6>
+    </footer>
+</body>
+</html>
